@@ -46,6 +46,19 @@ h1, h2, h3, h4, h5, h6 {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
 }
+.btn a{
+  outline: none;
+  background-color:var(--main-color);
+  color: #fff;
+  padding: 14px 30px;
+  
+  border: none;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
 p {
   color: var(--description);
 }
