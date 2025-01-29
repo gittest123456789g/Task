@@ -26,6 +26,12 @@ li{
 }
 .orang{
   color: #f9a826;
+  
+}
+.orang-t{
+  color: #f9a826;
+  font-size: 26px;
+  
 }
 h1, h2, h3, h4, h5, h6 {
   color: var(--main-color);
@@ -90,7 +96,8 @@ p {
 /* ///end hero and nav/////////// */
 /* /// start Why Choose/////////// */
 .point{
-  background-color: #f8f8fa;
+  /* background: linear-gradient(to right, rgba(13, 57, 106, 0.5), rgba(249, 168, 38, 0.5)); */
+background-color: #ddd;
   padding: 14px;
   border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -101,8 +108,8 @@ p {
 
 .num{
   width: 40px;
-  /* height: 32px; */
-  border: 1px solid #dddd;
+  height: 42px;
+  border: 1px solid #0d396a;
   border-radius: 50%;
  
  
@@ -110,6 +117,10 @@ p {
 /* ///end why choose/////////// */
 .service-box{
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .service-icon{
   width: 85px;
@@ -123,14 +134,17 @@ p {
   0% {
     transform: scale(1);
   }
-  40% {
-    transform: scale(1.05); 
+  30% {
+    transform: scale(1.1); 
   }
-  60% {
+  50% {
     transform: scale(1); 
   }
+  80% {
+    transform: scale(1.1); 
+  }
   100% {
-    transform: scale(1.05); 
+    transform: scale(1); 
   }
 }
 .service-icon img{
@@ -153,12 +167,45 @@ footer{
 .links-footer a:hover{
 color: #f9a826 !important;
 }
+/* Scroll Up Button Styling */
+#scrollUpBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background: var(--main-color);
+  box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transition: opacity 0.3s, transform 0.3s;
+  -moz-transition: opacity 0.3s, transform 0.3s;
+  -ms-transition: opacity 0.3s, transform 0.3s;
+  -o-transition: opacity 0.3s, transform 0.3s;
+}
+
+#scrollUpBtn:hover {
+  background-color: var(--text-color);
+}
+
+#scrollUpBtn:active {
+  transform: scale(0.95);
+}
 /* ///end footer////// */
 /* //media screen///////////// */
 @media (max-width:477px) {
   .logo{
     max-width: 70px;
   }
+  .title-size {
+    font-size: 47px;
+}
   .navbar-nav{
     align-items: center;
   }
@@ -178,7 +225,6 @@ color: #f9a826 !important;
   font-size: 14px;
 }
 .Why{
-  flex-direction: column;
   margin-bottom: 10px;
 }
 .links-footer{
