@@ -288,6 +288,11 @@ color: #f9a826 !important;
 .gif{
   display: none;
 }
+.num {
+  width: 30px;
+  height: 30px;
+  
+}
 .box-point{
   flex-direction: column;
 }
