@@ -19,6 +19,8 @@
  <!-- ///style//////// -->
  <link href="imag/favicon-16x16.png"  rel="shortcut icon">
  <!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> -->
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -223,8 +225,75 @@
     </div>
    </section>
   <!-- //end Services //// -->
+     <!-- ///start testimonials////////////////// -->
+     <section class="testimonials padding-Section">
+      <div class="container">
+        <div class="row">
+          <div class="head d-flex justify-content-center">
+
+            <div class="d-flex align-items-center gap-2 Why " data-aos="fade-down" data-aos-duration="1500">
+    
+              <h1 class="text-start lin-hight  ">Our</h1>
+             
+              <h1 class="orang">Testimonials</h1>
+            </div>
+          </div>
+        <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="testimonial">
+          <div
+            class="d-flex justify-content-center align-items-center avat"
+          >
+            <img src="imag/man-user-color-icon.webp" alt="Customer" />
+          </div>
+          <div class="testimonial-content text-balck text-center">
+            <div class="testimonial-name">Ahmed mohamed</div>
+            <div class="testimonial-text">
+              Excellent service! I highly recommend it to everyone.            </div>
+            <div
+              class="testimonial-stars"
+              data-rota-stars="5"
+              style="color: #0d396a"
+            ></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide">
+        <div class="testimonial">
+          <div
+            class="d-flex justify-content-center align-items-center avat"
+          >
+            <img src="imag/man-user-color-icon.webp" alt="Customer" />
+          </div>
+          <div class="testimonial-content text-balck text-center">
+            <div class="testimonial-name"> mohamed Abdullah</div>
+            <div class="testimonial-text">
+              Excellent service! I highly recommend it to everyone.            </div>
+            <div
+              class="testimonial-stars"
+              data-rota-stars="5"
+              style="color: #0d396a"
+            ></div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+      
+
+
+        </div>
+      </div>
+    </section>
+    <!-- ///end testimonials////////////////// -->
   <!-- //start CTA //// -->
-   <section class="padding-Section" id="CTA">
+   <section class="padding-Section bg-light" id="CTA">
     <div class="container">
       <div class="row">
   
@@ -267,7 +336,7 @@
         </div>
         <div class="col-lg-6 col-md-12">
           <div class="gif">
-            <img src="imag/cartoon-brain-idea-creative-design-isolated_24877-14846.png" alt="" class=" img-fluid rounded-2" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="imag/cartoon-brain-idea-creative-design-isolated_24877-14846-removebg-preview.png" alt="" class=" img-fluid rounded-2" data-aos="zoom-in" data-aos-duration="1500">
           </div>
     
         </div>
@@ -300,10 +369,29 @@
   <!-- //end footer //// -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-      // تفعيل مكتبة AOS
       AOS.init();
   </script>
+
+   <script>
+     document.querySelectorAll(".testimonial-stars").forEach((stars) => {
+       const starCount = stars.getAttribute("data-rota-stars");
+       stars.innerHTML = "★".repeat(starCount);
+     });
+   </script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rota/1.0.0/rota.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
   <script src="js/main.js"></script>
 </body>
 </html>
